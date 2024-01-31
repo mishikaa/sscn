@@ -1,0 +1,45 @@
+.implementation {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #F5F6FA; /* Set a light background color */
+    
+    .img-section {
+        flex: 1;
+        width: 100%;
+    }
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 3em;
+        font-weight: 600; /* Increase font weight for better visibility */
+        margin-bottom: 1.5rem; /* Add more space below the title */
+        line-height: 1.25em;
+        color: #363F6E;
+    }
+
+    .paragraph {
+        text-align: left;
+        line-height: 1.5em; /* Increase line height for better readability */
+        letter-spacing: 0.05em; /* Adjust letter spacing */
+        color: #61688B; /* Slightly lighter text color */
+        font-size: 1.25rem; /* Slightly smaller font size */
+        margin-bottom: 2rem;
+        margin-top: 1.5rem; /* Reduce top margin for better spacing */
+    }
+
+    /* Add a subtle box shadow for a card-like effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Add rounded corners */
+}
+

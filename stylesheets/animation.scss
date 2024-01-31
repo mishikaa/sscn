@@ -1,0 +1,36 @@
+// src/stylesheets/Hero.scss
+
+.shape1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    min-height: 120vh;
+    z-index: -1;
+    overflow: hidden !important;
+    line-height: 0;
+    background-color: #faf5f5;
+    clip-path: polygon(44% 0, 72% 47%, 45% 100%, 0% 100%, 0 48%, 0% 0%);
+    transform: scaleX(-1);
+    border-radius: 0 0 0 50px; /* Adjust the border-radius for a rounded pointed side */
+    
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shape2 {
+    position: absolute;
+    top: 0;
+    right: 60vh;
+    width: 100%;
+    min-height: 120vh;
+    z-index: -2;
+    overflow: hidden !important;
+    line-height: 0;
+    background-color: hsl(210, 44%, 94%);
+    clip-path: polygon(44% 0, 72% 47%, 45% 100%, 0% 100%, 0 48%, 0% 0%);
+    transform: scaleX(-1);
+    border-radius: 0 0 0 50px; /* Adjust the border-radius for a rounded pointed side */
+    
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  

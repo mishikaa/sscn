@@ -1,0 +1,97 @@
+//  Navbar.scss
+$text-color: rgb(156, 155, 155);
+$btn-color: #3887BE;
+
+.navbar {
+    padding: 10px 16px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Set a background color */
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+.logo img {
+    max-width: 100%;
+    height: 3.5rem;
+    /* Maintain aspect ratio for the logo */
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    /* Increase the gap for better spacing */
+
+}
+
+.navItem span {
+    --_p: 0%;
+    font-size: 1.15rem;
+    cursor: pointer;
+    padding-bottom: var(--s);
+    background:
+        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.navItem span:hover {
+    --_p: 100%;
+    color: #212743;
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1.5px;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 14px 16px;
+    /* Increase padding for better button size */
+
+    background-color: $btn-color;
+    color: $text-color;
+    /* White text color for better contrast */
+    box-shadow: 0 0 20px rgba(85, 217, 224, 0.2);
+    transition: background-color 0.4s, box-shadow 0.4s transform 1.4s;
+}
+
+.log {
+    background-color: rgba(255, 255, 255, 1);
+    color: $btn-color;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #96EFFF;
+    background-color: #96EFFF;
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 600px) {
+    .navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItem {
+        margin-bottom: 0.5rem;
+        /* Add some spacing between items */
+    }
+
+    button {
+        margin-top: 1rem;
+        /* Add space between navigation items and button */
+    }
+}
