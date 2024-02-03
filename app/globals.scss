@@ -1,10 +1,11 @@
 $bg: #EEF5FF;
-
+$font-color: #1F2544;
 body {
     padding: 0;
     margin: 0;
     font-size: 18px;
     border-radius: 0px;
+    color: $font-color;
     a {
         text-decoration: none;
     }

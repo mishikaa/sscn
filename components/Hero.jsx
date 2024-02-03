@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="shape1"></div>
         <div className="shape2"></div>
       <div className='left-panel'>
-        <h1>Transform Your Cable Networks with <span>SSCNMODEL</span></h1>
+        <h1 className='heading'>Transform Your Cable Networks with <span>SSCNMODEL</span></h1>
         <div className='left-panel_section'>
           <p>Welcome to SSCNMODEL, a revolutionary solution that enhances cable network efficiency, reduces costs, and beautifies your community.
             <br/>Explore the future of streamlined telecommunications with us.</p>

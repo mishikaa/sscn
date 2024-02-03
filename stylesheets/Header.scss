@@ -3,7 +3,7 @@ $text-color: rgb(156, 155, 155);
 $btn-color: #3887BE;
 
 .navbar {
-    padding: 10px 16px;
+    // padding: 10px 16px;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -25,11 +25,60 @@ $btn-color: #3887BE;
     gap: 1.5rem;
     /* Increase the gap for better spacing */
 
+    ul {
+        // margin: 100px auto 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0;     
+        max-width: 400px;
+      }
+      
+      @media screen and (min-width: 600px) {
+          ul {
+              flex-direction: row;
+          }
+      }
+      
+      li { 
+        position: relative; 
+        // padding: 15px 0;
+      }
+      
+      a {
+        // color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 12px 18px;
+        position: relative;
+      }
+      
+      a::after { 
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        background: none repeat scroll 0 0 transparent;
+        height: 2px;
+        width: 0;
+        background: #080808;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      }
+      
+      a:hover::after { 
+        width: 100%; 
+        left: 0; 
+      }
 }
 
 .navItem span {
     --_p: 0%;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     cursor: pointer;
     padding-bottom: var(--s);
     background:
@@ -52,7 +101,7 @@ a {
     color: $text-color;
 }
 
-button {
+.register {
     cursor: pointer;
     border: 0;
     border-radius: 50px;
@@ -68,12 +117,12 @@ button {
     transition: background-color 0.4s, box-shadow 0.4s transform 1.4s;
 }
 
-.log {
+.register {
     background-color: rgba(255, 255, 255, 1);
     color: $btn-color;
 }
 
-button:hover {
+.register:hover {
     box-shadow: 0 0 20px #96EFFF;
     background-color: #96EFFF;
     transform: scale(1.15);

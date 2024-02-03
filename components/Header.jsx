@@ -26,7 +26,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <button className="log">Register</button>
+        <Link href="/register" className="register">Register</Link>
     </nav>
   );
 };
